@@ -1,3 +1,5 @@
+package hust.soict.dsai.aims.test.Test;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
 
 public class TestPassingParameter {
 
@@ -19,6 +21,13 @@ public class TestPassingParameter {
 		Object tmp=o1;
 		o1=o2;
 		o2=tmp;
+	}
+	
+	public static void swap(DigitalVideoDisc d1, DigitalVideoDisc d2) {
+		String d1Title=d1.getTitle();
+		String d2Title=d2.getTitle();
+		d1.setTitle(d2Title);
+		d2.setTitle(d1Title);
 	}
 	
 	public static void changeTitle(DigitalVideoDisc dvd, String title) {
