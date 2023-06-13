@@ -1,0 +1,33 @@
+package hust.soict.dsai.aims.media;
+
+public abstract class Media {
+	
+	private String title;
+	private String category;
+	private float cost;
+	private int id;
+	private static int numCount=0;
+	
+	public String getTitle() {
+		return title;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public float getCost() {
+		return cost;
+	}
+
+	public Media(String title, String category, float cost) {
+		this.title = title;
+		this.category = category;
+		this.cost = cost;
+		numCount++;
+		this.id = numCount;}
+}
