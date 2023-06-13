@@ -1,3 +1,5 @@
+package hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc.DigitalVideoDisc;
 
 public class Cart {
 	public static final int MAX_NUMBERS_ORDERED =20;
@@ -13,7 +15,6 @@ public class Cart {
 			else {
 				System.out.println("The cart is almost full");
 			}
-			
 		}
 
 		public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
@@ -60,11 +61,17 @@ public class Cart {
 			System.out.println("Ordered Items:");
 			for (int i = 0; i < qtyOrdered; i++) {
 				DigitalVideoDisc dvd = itemsOrdered[i];
-				System.out.println((i+1) + " " + dvd.toString());
+				System.out.println((i+1) + " " + dvd.getDetail());
 			}
 			System.out.println("Total Cost: " + totalCost());
 			System.out.println("***************************************************");
 		}
+		
+		/*public void searchByTitle(String title) {
+			boolean foundMatch=false;
+			System.out.println("Search results for title: "+title);
+			for (DigitalVideoDisc dvd: items) {
+		} */
 	
 
 }
