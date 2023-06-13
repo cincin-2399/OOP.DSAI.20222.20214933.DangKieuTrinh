@@ -6,7 +6,7 @@ public class Disc extends Media{
 	private String director;
 	
 
-	public Disc(String title,String category,float cost) {
+	public Disc(String title,String category,String director ,int length,float cost) {
 		super(title,category,cost);
 		this.length=length;
 		this.director=director;
