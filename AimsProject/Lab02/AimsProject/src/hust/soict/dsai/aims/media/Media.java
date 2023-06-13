@@ -6,7 +6,7 @@ public abstract class Media {
 	private String category;
 	private float cost;
 	private int id;
-	private static int numCount=0;
+	protected static int numCount=0;
 	
 	public String getTitle() {
 		return title;
@@ -30,4 +30,12 @@ public abstract class Media {
 		this.cost = cost;
 		numCount++;
 		this.id = numCount;}
+
+	@Override
+	public String toString() {
+		return "Media [title=" + title + ", category=" + category + ", cost=" + cost + ", id=" + id + "]";
+	}
+	
+	
+	
 }
