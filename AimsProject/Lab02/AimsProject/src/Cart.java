@@ -13,7 +13,6 @@ public class Cart {
 			else {
 				System.out.println("The cart is almost full");
 			}
-			
 		}
 
 		public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
