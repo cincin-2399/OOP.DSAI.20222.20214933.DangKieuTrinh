@@ -49,5 +49,11 @@ public class Store {
 			System.out.println("There's no result matchs the provided title.");
 			}
 	}
+
+	public ArrayList<Media> getItemsInStore() {
+		return itemsInStore;
+	}
+	
+	
 	
 }

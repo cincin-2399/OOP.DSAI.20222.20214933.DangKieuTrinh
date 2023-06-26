@@ -57,11 +57,21 @@ public class NumberGrid extends JFrame{
 			}
 			else if (button.equals("DEL")) {
 				//handles the "DEL" case
-			}
+				    String currentText = tfDisplay.getText();
+				    if (!currentText.isEmpty()) {
+				        String updatedText = currentText.substring(0, currentText.length() - 1);
+				        tfDisplay.setText(updatedText);
+				    }
+				}
 			else {
 				//handles the "C" case
+				 tfDisplay.setText("");
 			}
 		}
+	}
+	
+	public static void main(String[] args) {
+		new NumberGrid();
 	}
 	
 
